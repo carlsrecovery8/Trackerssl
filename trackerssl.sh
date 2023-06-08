@@ -30,7 +30,7 @@
  echo -e "  ${GR}[${R}*${GR}] ${R}trackerssl Finalizado." 
  echo -e "  ${GR}[${R}*${GR}] ${R}Desarrollador: ${W}Hkgato" 
  echo -e "  ${GR}[${R}*${GR}] ${R}Contáctame:${W} https://t.me/Hkgato" 
- echo -e "  ${GR}[${R}*${GR}] ${R}Github:${W} https://github.com/4nonyMoussl" 
+ echo -e "  ${GR}[${R}*${GR}] ${R}Github:${W} https://github.com/carlsrecovery8" 
  echo 
  exit 
  } 
@@ -38,7 +38,7 @@
  #           Install trackerssl in $HOME 
  # ============================================== 
  path=$(pwd) 
- if [ "${path}" != "/data/data/com.termux/files/home/trackerssl" ]; then 
+ if [ "${path}" != "/data/data/com.termux/files/home/Trackerssl" ]; then 
  echo 
  echo -e "           ${GR}╭──> Ejecutar en${W} ~/trackerssl" 
  echo -e "${GR}[${R}*${GR}] ${R}ERROR:${GR} │──> trackerssl no está instalado en ${W}HOME" 
