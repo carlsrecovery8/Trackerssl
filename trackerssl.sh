@@ -338,11 +338,11 @@
  exit 
  fi 
  ping -c 1 ${wb} > ~/trackerssl/.wb1 
- grep -o "([0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+.)" ~/Dtve_Web/.wb1 > .wb2;grep -o "[0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+" ~/Dtve_Web/.wb2 > ~/Dtve_Web/.wb3 
+ grep -o "([0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+.)" ~/Trackerssl/.wb1 > .wb2;grep -o "[0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+" ~/Trackerssl/.wb2 > ~/Trackerssl/.wb3 
  banner 
  echo -e "  ${R}[${G}>${R}]${W}${W} Estadísticas del ${GR}PING${W} a:${W} ${R}${wb}${W}" 
  echo 
- DirWeb=$(head -n1 ~/trackerssl/.wb3 | cut -d " " -f1) 
+ DirWeb=$(head -n1 ~/Trackerssl/.wb3 | cut -d " " -f1) 
  echo -ne "  ${R}[${G}*${R}]${W} Dirección Web:${R} ${DirWeb}\n" 
  grep -o 'ttl=[0-9]\+' ~/trackerssl/.wb1 | tr -d "ttl" | tr -d "=" > ~/trackerssl/.ttl 
  tl=$(cat ~/trackerssl/.ttl) 
@@ -353,7 +353,7 @@
  grep -o 'icmp_seq=[0-9]\+' ~/trackerssl/.wb1 | tr -d "icmp_seq" | tr -d "=" > ~/trackerssl/.seq 
  cat ~/trackerssl/.seq 
  echo 
- rm ~/trackerssl/.wb1 .wb2 .wb3 .ttl .seq > /dev/null 2>/dev/null 
+ rm ~/Trackerssl/.wb1 .wb2 .wb3 .ttl .seq > /dev/null 2>/dev/null 
  # ============================================== 
  #  ################ GITATACK ################# 
  #          © Copyright - M7GATOHK
@@ -365,7 +365,7 @@
  echo 
  ChCon 
  echo -e "  \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] ${G}Ingresa el Username a buscar:${W}" 
- echo -e "  \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] ${R}EJEMPLO:${GR} Ux4hack" 
+ echo -e "  \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] ${R}EJEMPLO:${GR} M7TeamHK" 
  echo 
  echo -ne "  \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] ${G} USERNAME ${R}>${W}> ${GR}" 
  read -r username 
@@ -1037,16 +1037,16 @@
  banner 
  if [ ! -x $PREFIX/bin/HULK ]; then 
  echo ''' #!/bin/bash 
- HULK="/data/data/com.termux/files/home/trackerssl/.modules/hulk" 
+ HULK="/data/data/com.termux/files/home/Trackerssl/.modules/hulk" 
  cd ${HULK} 
  exec python2 "${HULK}/hulk.py" "$@" 
  ''' > $PREFIX/bin/HULK 
  chmod +x $PREFIX/bin/HULK 
- chmod +x ~/trackerssl/.modules/hulk/hulk.py 
- chmod +x ~/trackerssl/.modules/hulk/hulk.go 
- chmod +x ~/trackerssl/.modules/hulk/go.mod 
- chmod +x ~/trackerssl/.modules/hulk/docker 
- chmod +x ~/trackerssl/.modules/hulk/docker/Dockerfile 
+ chmod +x ~/Trackerssl/.modules/hulk/hulk.py 
+ chmod +x ~/Trackerssl/.modules/hulk/hulk.go 
+ chmod +x ~/Trackerssl/.modules/hulk/go.mod 
+ chmod +x ~/Trackerssl/.modules/hulk/docker 
+ chmod +x ~/Trackerssl/.modules/hulk/docker/Dockerfile 
  fi 
  echo -e "               ${GR}[${R}-${GR}] ${W}ATAQUE DOS ${GR}[${R}-${GR}]" 
  echo 
@@ -1139,7 +1139,7 @@
  PrivateIP=$(ifconfig 2>&1 | grep -i "inet 192.168" | cut -d " " -f 10) 
  num=$(echo "${PrivateIP}" | cut -d "." -f 3) 
  gateway="192.168.${num}" 
- nmap -P 192.168.${num}.1-254 | grep -i "for" | cut -d " " -f 5 > ~/trackerssl/ip.tmp 
+ nmap -P 192.168.${num}.1-254 | grep -i "for" | cut -d " " -f 5 > ~/Trackerssl/ip.tmp 
  } 
  scan > /dev/null 2>&1 
  if [ -z ${PrivateIP} ];then 
@@ -1151,9 +1151,9 @@
  fi 
  echo -e "   ${R}---{${W} DISPOSITIVOS${GR} CONECTADOS${W} EN MI RED${R} }---${W}" 
  echo 
- cat ~/trackerssl/ip.tmp 
+ cat ~/Trackerssl/ip.tmp 
  echo 
- rm ~/trackerssl/ip.tmp > /dev/null 2>&1 
+ rm ~/Trackerssl/ip.tmp > /dev/null 2>&1 
  elif [[ "${opt}" == "8" || "${opt}" == "08" ]]; then 
  banner 
  ChCon 
@@ -1283,7 +1283,7 @@
  banner 
  if [ ! -x $PREFIX/bin/Dom ]; then 
  echo ''' #!/bin/bash 
- Dom="/data/data/com.termux/files/home/trackerssl/.modules" 
+ Dom="/data/data/com.termux/files/home/Trackerssl/.modules" 
  cd ${Dom} 
  exec python "${Dom}/Dom.py" "$@" 
  ''' > $PREFIX/bin/Dom 
