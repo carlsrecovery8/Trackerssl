@@ -348,27 +348,27 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  echo 
  exit 
  fi 
- ping -c 1 ${wb} > ~/trackerssl/.wb1 
+ ping -c 1 ${wb} > ~/Trackerssl/.wb1 
  grep -o "([0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+.)" ~/Trackerssl/.wb1 > .wb2;grep -o "[0-9]\+.[0-9]\+.[0-9]\+.[0-9]\+" ~/Trackerssl/.wb2 > ~/Trackerssl/.wb3 
  banner 
  echo -e "  ${R}[${G}>${R}]${W}${W} Estadísticas del ${GR}PING${W} a:${W} ${R}${wb}${W}" 
  echo 
  DirWeb=$(head -n1 ~/Trackerssl/.wb3 | cut -d " " -f1) 
  echo -ne "  ${R}[${G}*${R}]${W} Dirección Web:${R} ${DirWeb}\n" 
- grep -o 'ttl=[0-9]\+' ~/trackerssl/.wb1 | tr -d "ttl" | tr -d "=" > ~/trackerssl/.ttl 
+ grep -o 'ttl=[0-9]\+' ~/Trackerssl/.wb1 | tr -d "ttl" | tr -d "=" > ~/Trackerssl/.ttl 
  tl=$(cat ~/trackerssl/.ttl) 
  echo -ne "  ${R}[${G}*${R}]${W} TTL:${R} ${tl}\n" 
- tim=$(grep -o 'time=[0-9]\+' ~/Dtve_Web/.wb1 | tr -d "time" | tr -d "=") 
+ tim=$(grep -o 'time=[0-9]\+' ~/Trackerssl/.wb1 | tr -d "time" | tr -d "=") 
  echo -ne "  ${R}[${G}*${R}]${W} Tiempo:${R} ${tim} ${W}ms \n" 
  echo -ne "  ${R}[${G}*${R}]${W} ICMP_SEQ:${R} " 
- grep -o 'icmp_seq=[0-9]\+' ~/trackerssl/.wb1 | tr -d "icmp_seq" | tr -d "=" > ~/trackerssl/.seq 
- cat ~/trackerssl/.seq 
+ grep -o 'icmp_seq=[0-9]\+' ~/Trackerssl/.wb1 | tr -d "icmp_seq" | tr -d "=" > ~/Trackerssl/.seq 
+ cat ~/Trackerssl/.seq 
  echo 
  rm ~/Trackerssl/.wb1 .wb2 .wb3 .ttl .seq > /dev/null 2>/dev/null 
  # ============================================== 
  #  ################ GITATACK ################# 
  #          © Copyright - M7GATOHK
- #                TradER. - M7TEAMHK
+ #               TradER. - M7TEAMHK
  # ============================================== 
  elif [[ "${opt}" == "3" || "${opt}" == "03" ]]; then 
  banner 
@@ -1018,12 +1018,12 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  if [ ! -x $PREFIX/bin/XERXES ]; then 
   
  echo ''' #!/bin/bash 
- XERXES="/data/data/com.termux/files/home/trackerssl/.modules" 
+ XERXES="/data/data/com.termux/files/home/Trackerssl/.modules" 
  cd ${XERXES} 
  ./xerxes "$@" 
  ''' > $PREFIX/bin/XERXES 
  chmod +x $PREFIX/bin/XERXES 
- chmod +x ~/trackerssl/.modules/xerxes 
+ chmod +x ~/Trackerssl/.modules/xerxes 
  fi 
  echo -e "                ${GR}[${R}-${GR}] ${W}ATAQUE DDOS ${GR}[${R}-${GR}]" 
  echo 
@@ -1329,7 +1329,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  banner 
  if [ ! -x $PREFIX/bin/CTFR ]; then 
  echo ''' #!/bin/bash 
- CTFR="/data/data/com.termux/files/home/trackerssl/.modules" 
+ CTFR="/data/data/com.termux/files/home/Trackerssl/.modules" 
  cd ${CTFR} 
  exec python "${CTFR}/ctfr.py" "$@" 
  ''' > $PREFIX/bin/CTFR 
