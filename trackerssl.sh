@@ -40,8 +40,8 @@
  path=$(pwd) 
  if [ "${path}" != "/data/data/com.termux/files/home/Trackerssl" ]; then 
  echo 
- echo -e "           ${GR}╭──> Ejecutar en${W} ~/trackerssl" 
- echo -e "${GR}[${R}*${GR}] ${R}ERROR:${GR} │──> trackerssl no está instalado en ${W}HOME" 
+ echo -e "           ${GR}╭──> Ejecutar en${W} ~/Trackerssl" 
+ echo -e "${GR}[${R}*${GR}] ${R}ERROR:${GR} │──> Trackerssl no está instalado en ${W}HOME" 
  echo -e "           ${GR}╰──> Reinstalar en ${W}HOME" 
  echo 
  exit 
@@ -115,7 +115,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  echo -e "                     ${GR}[${W} Detective_ssl${GR} ]${W} " 
  echo 
  echo -e "        ${W}${RED}::M7TEAMHK no se responsabiliza de::"${W} 
- echo -e "        ${W}${RED}::los daños causados por trackerssl::"${W} 
+ echo -e "        ${W}${RED}::los daños causados por Trackerssl::"${W} 
  echo "" 
  } 
  # ============================================== 
@@ -139,7 +139,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  echo 
  echo -e "  ${R}[${G}00${R}]${R} Salir ${W}" 
  echo 
- echo -ne "  ${R}trackerssl${W} >>${G} " 
+ echo -ne "  ${R}Trackerssl${W} >>${G} " 
  read opt 
  if [ -z "${opt}" ]; then 
  echo 
@@ -152,7 +152,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  fi 
  if [[ "${opt}" == "0" || "${opt}" == "00" ]]; then 
  echo "" 
- echo -e "  ${GR}[${R}*${GR}]${R} Dtve_Web:${W} Saliendo..." 
+ echo -e "  ${GR}[${R}*${GR}]${R} Trackerssl:${W} Saliendo..." 
  echo 
  sleep 1 
  clear 
@@ -201,14 +201,14 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  read inj 
  if [[ "${inj}" == "00" || "${inj}" == "0" ]]; then 
  echo 
- echo -e "  ${GR}[${R}*${GR}]${R} Dtve_Web:${W} Volviendo..." 
+ echo -e "  ${GR}[${R}*${GR}]${R} Trackerssl:${W} Volviendo..." 
  sleep 1 
  banner 
  options 
  fi 
  if [[ "${inj}" == "9" || "${inj}" == "99" ]]; then 
  echo 
- echo -e "  ${GR}[${R}*${GR}]${R} Dtve_Web:${W} Saliendo..." 
+ echo -e "  ${GR}[${R}*${GR}]${R} Trackerssl:${W} Saliendo..." 
  sleep 1 
  clear 
  exit 
