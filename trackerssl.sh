@@ -1296,7 +1296,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  echo ''' #!/bin/bash 
  Dom="/data/data/com.termux/files/home/Trackerssl/.modules" 
  cd ${Dom} 
- exec python "${Dom}/Dom.py" "$@" 
+ exec python2 "${Dom}/Dom.py" "$@" 
  ''' > $PREFIX/bin/Dom 
  chmod +x $PREFIX/bin/Dom 
  fi 
