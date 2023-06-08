@@ -128,7 +128,7 @@
  echo 
  echo -e "  ${R}[${G}00${R}]${R} Salir ${W}" 
  echo 
- echo -ne "  ${R}Dtve_Web${W} >>${G} " 
+ echo -ne "  ${R}trackerssl${W} >>${G} " 
  read opt 
  if [ -z "${opt}" ]; then 
  echo 
