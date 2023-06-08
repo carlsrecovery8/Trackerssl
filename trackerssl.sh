@@ -81,25 +81,36 @@
  #            Copyright by @Hkgato
  # ============================================== 
  clear 
- echo -e ${G} "                     :3qKq3>:"|pv -qL 700 
- echo -e ${G} "                 :>3qKKKKKKKq3>:"|pv -qL 700 
- echo -e ${G} "             ';CpKKKKKKKKKKKKKKKpC;"|pv -qL 700 
- echo -e ${G} "         -iPKKKKKKKKKKKKKKKKKKKKKKKPi"|pv -qL 700 
- echo -e ${G} "     ~v]KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK]v~"|pv -qL 700 
- echo -e ${G} "   ͥ‘rwKKKKKKKKKKKKKPv,:-ͥ‘:,;vPKKKKKKKKKKKKKwr,"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKKKK/             !KKKKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKKKf               CKKKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKKp-               -qKKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKK>‘               .*KKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKw;,_ͥ‘-                   .-:,‘wKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKhi*:                   ‘;*ihKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKK;                 ;KKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKK2>‘             ‘>2KKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKKKKZ             ZKKKKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKKKKK5             eKKKKKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " !KKKKKKKKKKKqC;-               -;CqKKKKKKKKKKK!"|pv -qL 700 
- echo -e ${G} " <KKKKKKKKkkr,                     ,rrSKKKKKKKK>"|pv -qL 700 
- echo -e ${G} "   -‘v]qj:-                           -:jq]v‘-  "|pv -qL 700 
+ echo -e ${G} "                    ...''''........''''..."|pv -qL 700
+echo -e ${G} "               ..''....                ...'''.."|pv -qL 700
+echo -e ${G} "            .',...       ..   ..   ..       ...,'."|pv -qL 700
+echo -e ${G} "          ',...      .                  .       ..;'"|pv -qL 700
+echo -e ${G} "        ',...    .    ...................   ..    ..;'"|pv -qL 700
+echo -e ${G} "      ';..  ..    ...........................   ..  ..;'"|pv -qL 700
+echo -e ${G} "     ;..       .......' ...'..'..'.............       .';"|pv -qL 700
+echo -e ${G} "   .;..  ..  .........'.''..........'''..........  ..  ..:."|pv -qL 700
+echo -e ${G} "  .;..     ..'......''...  .          ..''.........     ..:."|pv -qL 700
+echo -e ${G} "  :..  .  ........''...;;c,        'c:;....''.....'.  .. ..:"|pv -qL 700
+echo -e ${G} " ;..     .......''. .ldck.   ..     .xlx:, ..'.....'.     ..;"|pv -qL 700
+echo -e ${G} ".;.  .. ..' ...''. 'lx0dx ;dkO0kl.   odkod'  .'.....'.  .  .;."|pv -qL 700
+echo -e ${G} ",..     .'.. .''.  :x0Ok0'    xXK.   kkOOdx   .'... '..    ..;"|pv -qL 700
+echo -e ${G} ";.. .. ..' ...,.   ;KOKKKXk:;cNWNO;cOXNXKXd   .'.....'.  .  .:"|pv -qL 700
+echo -e ${G} ";..    .......'.    oNWMMMMMWOkxOXMMMMMMWO.   ..'....'.     .:"|pv -qL 700
+echo -e ${G} ";..    .......'.     .xNMMMM0kocOkMMMMNO;     ..'....'.     .:"|pv -qL 700
+echo -e ${G} ";.. .. ... ...,.        ...':kOOk;'....       .''....'.  .  .:"|pv -qL 700
+echo -e ${G} ",..     .' ...''.           .O00O             .'... '..    ..,"|pv -qL 700
+echo -e ${G} ".;.  .. ... ...''.          .oxx;            .,.....'.  .  .;."|pv -qL 700
+echo -e ${G} " ;..     .......''.          .::.          ..'.....'.     ..;"|pv -qL 700
+echo -e ${G} "  :..  .  ........''.         '          ..'.' ...'.  .. ..:"|pv -qL 700
+echo -e ${G} "  .:..     ..'......''..              ..''.'.......     ..:."|pv -qL 700
+echo -e ${G} "   .:..  ..  ..........'''..........''''.' ......   .  ..:"|pv -qL 700
+echo -e ${G} "     ,'.       .............'..'.'..' .........       .';"|pv -qL 700
+echo -e ${G} "      .;..  ..    ....... ...................   ..  ..:."|pv -qL 700
+echo -e ${G} "        ';..     .   ....................    .    ..;'"|pv -qL 700
+echo -e ${G} "          .,'.       .                  .       .';."|pv -qL 700
+echo -e ${G} "            .','..   .   ..   ..   ..       ..','."|pv -qL 700
+echo -e ${G} "                .'''...                ...'''."|pv -qL 700
+echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  echo -e ${R} "                          trackerssl" 
  echo -e "                     ${GR}[${W} Detective_ssl${GR} ]${W} " 
  echo 
