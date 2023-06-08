@@ -1,7 +1,7 @@
 #!/usr/bin/python3 
   
  # GeoTrackerIP By JRIC2002. 
- # Modificado por Hkgato 
+ # Modificado por @Ux4hack 
   
  import requests 
  import json 
