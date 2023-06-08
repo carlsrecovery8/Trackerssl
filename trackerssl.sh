@@ -356,7 +356,7 @@ echo -e ${G} "                    ...''''''''''''''''..."|pv -qL 700
  DirWeb=$(head -n1 ~/Trackerssl/.wb3 | cut -d " " -f1) 
  echo -ne "  ${R}[${G}*${R}]${W} Dirección Web:${R} ${DirWeb}\n" 
  grep -o 'ttl=[0-9]\+' ~/Trackerssl/.wb1 | tr -d "ttl" | tr -d "=" > ~/Trackerssl/.ttl 
- tl=$(cat ~/trackerssl/.ttl) 
+ tl=$(cat ~/Trackerssl/.ttl) 
  echo -ne "  ${R}[${G}*${R}]${W} TTL:${R} ${tl}\n" 
  tim=$(grep -o 'time=[0-9]\+' ~/Trackerssl/.wb1 | tr -d "time" | tr -d "=") 
  echo -ne "  ${R}[${G}*${R}]${W} Tiempo:${R} ${tim} ${W}ms \n" 
